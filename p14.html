@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<head>
+    <title>Practica 9 </title>
+    <style>
+        #formularioTelefono input:invalid {
+            border: 0.2em solid red;
+        }
+
+        #formularioTelefono input:valid {
+            border: 0.2em solid green;
+        }
+    </style>
+    
+</head>
+<body>
+    <h3>Ejercicio 1</h3>
+    <br><br>
+    <h1>MI HOTEL-Reserva on line</h1>
+    <form action="" method="post">
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" ><br> <br>
+
+        <label for="apellidos">Apellidos: </label>
+        <input type="text" name="apellidos"><br><br>
+
+        <label for="telefono">Teléfono: </label>
+        <input type="number" name="telefono"><br><br>
+
+        <label for="email">eMail: </label>
+        <input type="email" name="email"><br><br>
+
+        <label for="noches">Número de Noches</label>
+        <input type="number" name="noches"><br><br>
+
+        <label for="entrada">Fecha de entrada: </label>
+        <label for="dia">DIA</label>
+        <input type="number" name="entrada" id="dia" min="1" max="31">
+        <label for="mes">MES</label>
+        <input type="number" name="entrada" id="mes" min="1" max="12">
+        <br><br>
+        <label for="habitacion">Tipo de habitacion: </label>
+        <input type="radio" name="habitacion" id="simple" value="simple">
+        <label for="simple">Simple</label>
+        <input type="radio" name="habitacion" id="doble" value="doble">
+        <label for="doble">Doble</label>
+        <input type="radio" name="habitacion" id="matrimonio" value="matrimonio">
+        <label for="matrimonio">Matrimonio</label>
+        <br><br>
+        <label for="extras">Extras: </label>
+        <input type="checkbox" name="extras" id="desayuno" value="desayuno">
+        <label for="desayuno">Desayuno</label>
+        <input type="checkbox" name="extras" id="comida" value="comida">
+        <label for="comida">Comida</label>
+        <input type="checkbox" name="extras" id="cena" value="cena">
+        <label for="cena">Cena</label>
+        <input type="checkbox" name="extras" id="supletoria" value="supletoria">
+        <label for="supletoria">Cama Supletoria</label>
+        <br><br>
+        <label for="Comentarios">Comentarios:</label>
+        <br><br>
+        <textarea name="Comentarios"  cols="30" rows="10">
+            Escribe aqui...
+        </textarea>
+        <br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+
+    </form>
+    <br><br>
+    <hr>
+    <h3>Ejercicio 2</h3>
+    <br>
+    <form action="" method="post">
+
+        <input type="date" name="fecha">
+        <label for="fecha"> Fecha de nacimiento</label>
+        <br><br>
+        <input type="time" name="hora" >
+        <label for="hora">Hora de nacimiento</label>
+        <br><br>
+        <input type="submit" value="Enviar">
+
+    </form>
+
+    <br><br>
+    <hr>
+    <h3>Ejercicio 3</h3>
+    <form action="" method="post">
+        <fieldset style="background-color: aqua;">
+            <legend>Datos personales</legend>
+            <label for="nombreempresa">Nombre de la empresa: </label>
+            <input type="text" name="nombreempresa"><br><br>
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre"><br><br>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" ><br><br>
+            <label for="sexo">Sexo: </label>
+            <input type="radio" name="sexo" id="hombre" value="hombre">
+            <label for="hombre">Hombre</label>
+           <input type="radio" name="sexo" id="mujer" value="mujer">
+           <label for="mujer">Mujer</label>
+            <br><br>
+           <label for="poblacion">Poblacion</label>
+           <select name="ciudad" id="ciudad">
+            <option value="Salamanca">Salamanca</option>
+            <option value="Valladolid">Valladolid</option>
+            <option value="avila">Ávila</option>
+           </select>
+
+        </fieldset>
+        <fieldset style="background-color: bisque;">
+            <legend>Aficiones</legend>
+            <label for="deportes">Deportes</label>
+            <select name="deportes" id="deportes">
+
+                <option value="tenis">Tenis</option>
+                <option value="futbol">Fútbol</option>
+                <option value="baloncesto">Baloncesto</option>
+            </select>
+            <label for="musica">Musica</label>
+            <select name="musica" id="musica">
+                <option value="jazz">jazz</option>
+                <option value="reggae">reggae</option>
+                <option value="hip-hop">hip-hop</option>
+            </select>
+        </fieldset>
+        <br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+        
+    </form>
+    <br><br>
+    <hr>
+    <h3>Ejercicio 4</h3>
+    <form action="" method="post">
+
+        <label for="coches">Coches</label>
+        <select name="coches" id="coches">
+            <optgroup label="Swedish Cars">
+                
+                <option value="Volvo">Volvo</option>
+                <option value="saab">Saab</option>
+            </optgroup>
+            <optgroup label="German Cars">
+                
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </optgroup>
+        </select>
+    </form>
+    <br><br>
+    <hr>
+    <h3>Ejercicio 5</h3>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Nuevos Campos</legend>
+        <label for="color">Color: </label>
+        <input type="color" name="color"><br><br>
+        <label for="fecha">Fecha: </label>
+        <input type="date" name="fecha"><br><br>
+        <label for="fechahora">FechaHora:</label>
+        <input type="datetime" name="fechahora"><br><br>
+        <label for="fechahoralocal">Fecha Hora Local:</label>
+        <input type="datetime-local" name="fechahoralocal"><br><br>
+        <label for="hora">Hora: </label>
+        <input type="time" name="hora"><br><br>
+        <label for="mes">Mes: </label>
+        <input type="month" name="mes"><br><br>
+        <label for="semana">Semana: </label>
+        <input type="week" name="semana"><br><br>
+        <label for="email"> Email:</label>
+        <input type="email" name="email"><br><br>
+        <label for="numero">Numero: </label>
+        <input type="number"name="numero"><br><br>
+        <label for="rango">Rango: </label>
+        <input type="range" name="rango" min="1" max="500"><br><br>
+        <label for="busqueda">Busqueda: </label>
+        <input type="search" name="busqueda"><br><br>
+        <label for="telefono">Teléfono: </label>
+        <input type="tel" name="telefono"><br><br>
+        <label for="web">Web URL: </label>
+        <input type="url" name="web">
+        <p>Entrada a partir de datos de una lista, para este control utilizamos dos elementos input list="relacion" para recopilar el dato y datalist para indicar los posibles
+            valores: Página web: </p><input list="relacion">
+            <p>Encriptación, permite encriptar datos, genera 2 claves: mantiene la clave privada en el equipo y envían la clave pública: </p><label>Usuario:</label>
+            <input list="relación"><br><br>
+            <label>Texto(type="text"):</label>
+            <input type="text"><br>
+            <label>Oculto(type="hidden"):</label>
+            <input type="hidden"><br>
+            <label>Clave(type="password"):</label>
+            <input type="password"><br>
+            <label>Imagen(type="image"):</label>
+            <input type="image"><br>
+            <label>Casilla de verificación(type="checkbox"):</label>
+            <input type="checkbox"><br>
+            <label>Radio(type="radio"):</label>
+            <input type="radio"><br>
+            <label>Archivo(type="file"):</label>
+            <input type="file"><br>
+            <label>Botón(type="button"):</label>
+            <input type="button"><br>
+            <label>Borrado(type="reset"):</label>
+            <input type="reset"><br>
+            <label>Envío(type="submit"):</label>
+            <input type="submit"><br>
+            </fieldset>
+
+    </form>
+    <br><br>
+    <hr>
+    <h3>Ejercicio 6</h3>
+    <form id="formularioTelefono">
+        <label for="telefono">Teléfono (9 dígitos):</label>
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" 
+               placeholder="Ejemplo: 123456789" required title="Debe contener 9 dígitos numéricos">
+        
+        <br>
+
+        <button type="submit">Enviar</button>
+    </form>
+    </form>
+</body>
