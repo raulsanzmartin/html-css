@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: [uno] 100px [dos] 100px [tres] auto [cuatro];
+  grid-gap: 10px;
+  width: 60%;
+  margin: 0 auto;
+}
+#rojo {
+  background-color: red;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: uno;
+  grid-row-end: tres;
+}
+
+#azul {
+  background-color: blue;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: uno;
+  grid-row-end: dos;
+}
+
+#amarillo {
+  background-color: yellow;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: dos;
+  grid-row-end: cuatro;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+      <div id="rojo">ROJO</div>
+      <div id="azul">AZUL</div>
+      <div id="amarillo">AMARILLO</div>
+    </div>
+</body>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+        .container1{
+            background-color: yellow;
+            display:flex;
+            /*alineo verticalmente*/
+            align-items:center;
+            /*alineo horizontalmente*/
+            justify-content: center;
+            border: 2px solid black;
+            height: 300px;
+        }
+        .container1 div{
+            text-align: center;
+            background-color: orange;
+            border: 2px solid black;
+           /*  flex: 1 1 80%; */
+        }
+        .container2{
+            background-color: purple;
+            display:flex;
+            /*alineo verticalmente*/
+            align-items:center;
+            /*alineo horizontalmente*/
+            justify-content: center;
+            border: 2px solid black;
+            height: 300px;
+            flex-wrap: wrap;
+        }
+        .container2 div{
+            background-color: pink;
+            text-align: center;
+            border: 2px solid black;
+            width: 30%;
+            height: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div><p>Primer elemento</p></div>
+        <div><p>Segundo elemento</p></div>
+        <div><p>Tercer elemento </p></div>
+        <img src="logo.svg" width="200px" />
+      </div>
+<div class="container2">   
+    <div>UNO</div>
+    <div>DOS</div>
+    <div>TRES</div>
+    <div>CUATRO</div>
+    <div>CINCO</div>
+    <div>SEIS</div>
+    <div>SIETE</div>
+    </div>
+  </body>
+</html>

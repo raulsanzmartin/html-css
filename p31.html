@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+.container {
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(3, 100px);
+}
+#cab {
+  background-color: blue;
+  grid-area: cab;
+}
+
+#pie {
+  background-color: green;
+  grid-area: pie;
+}
+
+#menu {
+  background-color: red;
+  grid-area: menu;
+}
+
+#principal {
+  background-color: yellow;
+  grid-area: main;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(3, 100px);
+  grid-template-areas:
+    "cab cab cab cab cab"
+    "menu  .  main main main"
+    "menu  pie pie pie pie";
+}
+</style>
+</head>
+<body>
+    <div class="container">
+      <div id="cab">Cabecera</div>
+      <div id="menu">Menú</div>
+      <div id="pie">Pie</div>
+      <div id="principal">Principal</div>
+    </div>
+</body>
+

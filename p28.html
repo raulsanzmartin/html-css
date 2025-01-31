@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Columnas</title>
+        <style>
+            table {
+                border-collapse: collapse;   
+            }
+            th,td{
+                border: 2px solid white;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>Escuela entre pasos</caption>
+            <colgroup>
+                <col span="2" style="background-color: grey;">
+                <col span style="background-color: yellow">
+                <col span style="background-color: green">
+            </colgroup>
+            <tr>
+                <th>Actividad</th>
+                <th>Profesor</th>
+                <th>Aula</th>
+                <th>Nivel</th>
+            </tr>
+            <tr>
+                <td>Ballet</td>
+                <td>Juan</td>
+                <td>C2</td>
+                <td>Nivel 1</td>
+            </tr>
+            <tr>
+                <td>Contemporáneo</td>
+                <td>Lucca</td>
+                <td>B1</td>
+                <td>Nivel 2</td>
+            </tr>
+            <tr>
+                <td colspan="4">Ya no quedan plazas de estas actividades</td>
+            </tr>
+        </table>
+    </body>
