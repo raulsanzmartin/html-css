@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selectores en CSS</title>
+
+    <style>
+        /* styles.css */
+
+body {
+    font-family: 'Courier New';
+}
+
+#main {
+    background-color: grey;
+}
+
+h1.especial {
+    color: blue;
+}
+
+h2, h3 {
+    border: 1px solid orange;
+}
+
+li {
+    color: blue;
+}
+
+ul ul li {
+    color: green;
+}
+
+img {
+    border: 5px solid black;
+}
+
+img[alt="segunda"] {
+    border: 5px solid red;
+}
+
+h3.antes {
+    background-color: pink;
+}
+
+p + h3 {
+    background-color: blue;
+}
+
+        
+    </style>
+
+</head>
+
+<body>
+
+    <!-- selecciones con identificador-->
+    <p id="main">
+        Este párrafo se selecciona con el selector #id
+    </p>
+
+
+    <!-- seleccionando elementos con clase -->
+    <h1>Normal</h1>
+    <h1 class="especial">Especial</h1>
+    <h1>Normal</h1>
+    <h1 class="especial">Especial</h1>
+
+    <!--selección de varios elementos-->
+    <h2>Varios elementos</h2>
+    <h3>Varios elementos</h3>
+
+    <!-- dentro de otro -->
+    <ul>
+        <li>Primero</li>
+        <li>Segundo
+            <ul>
+                <li>2.1</li>
+                <li>2.2</li>
+            </ul>
+        </li>
+    </ul>
+
+    <!--Hijo directo -->
+    <h3 class="antes">Antes</h3>
+
+    <p>
+        <img width="100px" src="elcorte.png" />
+        <span><img width="100px" src="elcorte.png" alt="segunda" /></span>
+    </p>
+
+    <h3>Después</h3>
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>SELECTORES AVANZADOS</title>
+    <style>
+        a:link {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: green;
+        }
+
+        a:visited {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        ul:first-child {
+            background-color: grey;
+        }
+
+        ul:first-child li:last-child {
+            background-color: blue;
+            color: white;
+        }
+
+        ul:last-child {
+            border: 1px solid black;
+        }
+
+        ul:last-child li:nth-child(2) {
+            color: orange;
+        }
+
+        p::first-letter {
+            font-size: 2em;
+            color: red;
+        }
+
+        p::first-line {
+            color: blue;
+            font-size: 1.2em;
+        }
+
+        p::after {
+            content: " FIN";
+            border: 1px solid green;
+        }
+        ul li{
+            color: orange;
+        }
+        ul li:first-child{
+            background-color: grey;
+            color: black;
+        }
+        ul li:last-child{
+            background-color: blue;
+            color: white;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <a href="https://www.valenciacf.com/es/shop/home">Primer enlace</a>
+    <a href="https://www.valenciacf.com/es/shop/home">Segundo enlace</a>
+    <a href="https://www.valenciacf.com/es/shop/home">Tercer enlace</a>
+
+    <ul>
+        <li>1.1</li>
+        <li>1.2</li>
+        <li>1.3</li>
+    </ul>
+
+    <ul>
+        <li>2.1</li>
+        <li>2.2</li>
+        <li>2.3</li>
+    </ul>
+
+    <!-- Pseudolementos-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus doloremque nobis vitae, animi quis eligendi laudantium odio esse id sit, commodi modi voluptatum qui eveniet omnis atque, eius blanditiis ipsam.</p>
+</body>
+</html>
